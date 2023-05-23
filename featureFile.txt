@@ -1,0 +1,57 @@
+# below is added feature
+# @SmokeScenario
+Feature: feature to test login functionality
+
+  @checkingBasicLogin
+  Scenario: check login is successful with valid credentials
+    Given user is on login page
+    When user enters username and password
+    And clicks on login button
+    Then user is navigated to the home page
+
+  @CheckingGoogleSearch
+  Scenario: Validate google search is working
+    Given browser is open
+    And user is on google search page
+    When user enters a text in search box
+    And user hits enter
+    Then user is navigated to search results
+
+  @LoginTestingSuccessfull
+  Scenario: Check login is successful with valid credentials
+    Given browser should open
+    And user should be on login page
+    When user enter correct username and password
+    And user clicks on login
+    Then user should naviagted to home page
+
+  @LoginTestingParameterized
+  Scenario Outline: Checking login is successful with valid credentials
+    Given browser should open Para
+    And user should be on login page Para
+    When user enter correct <username> and <password> Para
+    And user clicks on login Para
+    Then user should naviagted to home page Para
+
+    Examples: 
+      | username     | password   |
+      | umeratvertex | Timer@va88 |
+ #|Wifi|Module|
+
+
+https://www.facebook.com/vertexspecialtechnologies
+
+
+//div[@class='single-job-list-item]
+//a[@href='https://vertexspecial.com/about']
+//section[@class='testimonial_title title']
+//a[@href='https://vertexspecial.com/service]
+
+//body/div[4]/nav[1]/div[1]/div[2]/ul[1]/li[3]/a[1]
+
+//a[contains(text(),'Mobile UI/UX Design')]
+//a[contains(text(),'IT-infrastructure Development')]
+
+//body/div[4]/nav[1]/div[1]/div[2]/ul[1]/li[3]/div[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[2]/a[1]
+//a[@href='https://vertexspecial.com/service/web-ui-ux-design']
+<a href="https://vertexspecial.com/service/prototyping-wireframing" xpath="1">Prototyping &amp; Wireframing</a>
